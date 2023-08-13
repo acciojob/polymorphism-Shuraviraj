@@ -7,19 +7,18 @@ public class Main {
         System.out.println(p.product(10, 20, 30));
         System.out.println(p.product(10.50, 11.90));
     }
-}
 
-class Product {
-    public int product(int x, int y) {
-        return x * y;
+    static class Product {
+        public int product(int x, int y) {
+            return x * y;
+        }
+
+        public int product(int x, int y, int z) {
+            return x * y * z;
+        }
+
+        public double product(double x, double y) {
+            return x * y;
+        }
     }
-
-    public int product(int x, int y, int z) {
-        return x * y * z;
-    }
-
-    public double product(double x, double y) {
-        return x * y;
-    }
-
 }
